@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percabangan if/else/if dengan kurung kurawal</title>
+</head>
+<body>
+    <style>
+        p{
+            text-align: center;
+            font-family: serif;
+            font-size: xx-large;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        var nilai = prompt("Inputkan nilai akhir:");
+        var grade = "";
+
+        if (nilai >= 90){
+            grade = "A"
+        } else if(nilai >= 80) {
+            grade = "B+"
+        } else if(nilai >= 70) {
+            grade = "B"
+        } else if(nilai >= 60) {
+            grade = "C+"
+        } else if(nilai >= 50) {
+            grade = "C"
+        } else if(nilai >= 40) {
+            grade = "D"
+        } else if(nilai >= 30) {
+            grade = "E"
+        } else { 
+            grade = "F";
+        }
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>       
+</body>
+</html>

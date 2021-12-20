@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan While</title>
+    <style>
+        body{
+            background-color: yellow;
+            color: purple;
+            text-align: center;
+            font-size: xx-large;
+            font-family: sans-serif;
+            text-shadow: 10px 10px 5px #000000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda ingin mengulang?");
+        var counter = 0;
+
+        while(ulangi){
+            var jawab = confirm("Apakah anda ingin mengulang?")
+            counter++;
+            if(jawab == false){
+                ulangi = false;
+            }
+        }
+
+        document.write("Perulangan yang sudah Anda lakukan sebanyak "+ counter +" kali");
+    </script>
+</body>
+</html>
