@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM API Javascript</title>
+</head>
+
+<body>
+
+    <script>
+        // membuat element h1
+        var judul = document.createElement("h1");
+        var isi = document.createElement("p")
+ 
+        // mengisi kontent elemen
+        judul.textContent = "Belajar Javascript Untuk Pemula";
+        isi.textContent = "Hai Teman-Teman Selamat Datang Di Web. Selamat Belajar!";
+
+        // menambahkan elemen ke dalam tag body
+        document.body.append(judul);
+        document.body.append(isi);
+        
+        // memberikan CSS ke elemen judul
+        judul.style.background = "yellow";
+        judul.style.textAlign = "center";
+        judul.style.fontSize = "xx-large";
+        judul.style.color = "blue";
+
+        // memberikan CSS ke elemen isi
+        isi.style.textAlign = "center";
+        isi.style.fontSize = "xx-large";
+        isi.style.color = "red";
+
+    </script>
+    
+</body>
+</html>
